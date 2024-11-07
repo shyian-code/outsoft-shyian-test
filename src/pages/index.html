@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="./images/we-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We | OutSoft</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <img src="../assets/images/we-logo.svg" alt="">
-            <nav></nav>
-        </div>
-    </header>
-    <main class="main">
-        <section class="hero-section">
-            <div class="container">
-                <h1>We love salud</h1>
-            </div>
-        </section class="faq-section">
-            <div class="container">
-                <h2 class="faq-section__title">PREGUNTAS FRECUENTES</h2>
-
+<extends src="html/layouts/_html.html" locals='{
+  "pageTitle": "Home",
+  "pageClass": "home-page"
+}'>
+    <block name="main">
+        <main>
+            <section class="hero-section">
+                <div class="container">
+                    <h1>We love salud</h1>
+                </div>
+            </section class="faq-section">
                 
-            </div>
-        <section>
-
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            
-        </div>
-    </footer>
-</body>
-</html>
+            <section>
+                <div class="container">
+                    <h2 class="faq-section__title">PREGUNTAS FRECUENTES</h2>
+    
+                    
+                </div>
+            </section>
+        </main>
+    </block>
+</extends>
